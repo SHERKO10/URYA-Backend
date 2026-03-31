@@ -1,0 +1,27 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  FTP-Deploy:
+    name: Déployer via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code source
+        uses: actions/checkout@v3
+
+      - name: Déployer via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          local-dir: ./ 
+          server-dir: / 
+          port: ${{ secrets.PORT || 21 }}
+          protocol: ftp
+          dry-run: false
