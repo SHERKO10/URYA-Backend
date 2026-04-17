@@ -46,11 +46,11 @@ const seedData = async () => {
         ],
       },
       {
-        title: 'AFRICAPAY',
+        title: 'LORA',
         description:
-          'Application de paiement Mobile Money en CFA basée sur la blockchain (Stellar/Celo). Paiements par QR code, frais réduits et meilleure interopérabilité entre les opérateurs.',
+          'LORA parcourt internet à la recherche d\'escroqueries. Il analyse automatiquement les informations disponibles sur une personne ou structure — réseaux sociaux, sites web, forums — et calcule un score de risque pour savoir si c\'est dangereux.',
         imageUrl: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800',
-        category: 'mobile',
+        category: 'ai',
         links: {
           github: null,
           demo: null,
@@ -58,12 +58,12 @@ const seedData = async () => {
         },
         isFeatured: true,
         members: ['Équipe URYA'],
-        tags: ['QR Code', 'Blockchain', 'Mobile Money', 'Interopérable'],
+        tags: ['Score de risque', 'Analyse réseaux sociaux', 'Détection arnaques', 'Accessible à tous'],
       },
       {
-        title: 'Neurol Détection',
+        title: 'URYA Neural Cryptography',
         description:
-          'Module IA de Détection d’Intrusions basé sur Random Forest et LSTM. Analyse jusqu’à 100 000 logs pour réduire de 40% le temps de détection des attaques.',
+          'Module ML (Random Forest + LSTM) pour la détection d\'anomalies et la cryptographie neuronale. Réduction de 40% du temps de détection avec 100 000 logs.',
         imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800',
         category: 'ai',
         links: {
